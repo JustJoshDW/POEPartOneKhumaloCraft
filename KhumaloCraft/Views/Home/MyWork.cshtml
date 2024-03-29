@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewData["Title"] = "My Work";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <style>
+        /* Here I placed some basic card styling to simplify and clean my code */
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: calc(33.33% - 20px); /* I learned this back when I was working, this should allow for multiple screen sizes */
+            box-shadow: 0 4px 8px #10101011);
+            float: left; 
+            box-sizing: border-box; 
+        }
+
+            
+            .card img {
+                max-width: 100%;
+                height: auto;
+            }
+
+        /* Clearing the floats after the image is a good idea */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    <!-- ST10313014 Joshua de Wet-->
+</head>
+ 
+<body>
+    <h1>My Work</h1>
+    <h4>Here at KhumaloCraft we aim to advertise all local artwork equally and with the goal of promoting the small creators in our beautiful country</h4>
+    <p>Available works:</p>
+
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="~/Images/South-African-flag-pencil-topper.jpg" alt="Artwork 1">
+        <h3>Pencil Topper</h3>
+        <p>Artist: Tmoweyni</p>
+        <p>Price: R100</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="~/Images/South-african-flag-pin.jpg" alt="Artwork 2">
+        <h3>Flag Pin</h3>
+        <p>Artist: Khuloco</p>
+        <p>Price: R50</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <img src="~/Images/Gcina-SA-Traveller.jpg" alt="Artwork 3">
+        <h3>eDoll</h3>
+        <p>Artist: Phuka</p>
+        <p>Price: R200</p>
+    </div>
+
+    <div class="clearfix"></div> <!-- Clearing the floats after the cards works well-->
+<p>Created by Joshua de Wet ST10313014</p>
+</body>
+</html>
+
